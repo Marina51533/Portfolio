@@ -9,6 +9,19 @@ $(document).ready(function() {
         $('body').removeClass('lock');
     });
 });
+//---Paralax
+function paralax() {
+    let a = screen.height / 6
+    let b = screen.availHeight / 3
+    console.log(document.documentElement.scrollTop)
+    let g = document.querySelector('.line_white')
+
+
+    if (document.documentElement.scrollTop >= a) {
+        g.style.width = '200px'
+    }
+}
+//----Portfolio
 $(function() {
     $(".btn_tex_header ").mouseover(function(e) {
 
