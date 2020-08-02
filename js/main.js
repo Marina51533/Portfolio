@@ -14,12 +14,16 @@ function paralax() {
     let a = screen.height / 6
     let b = screen.availHeight / 3
     console.log(document.documentElement.scrollTop)
-    let g = document.querySelector('.line_white')
+    let opacityH2 = document.querySelector('.content_first_h2');
+    let leftBlocks = document.querySelector('.wrapper_content_blocks');
+    let leftBlocks2 = document.querySelector('.wrapper_content_blocks2');
 
 
     if (document.documentElement.scrollTop >= a) {
-        g.style.width = '200px'
+        opacityH2.style.opacity = '1'
+
     }
+
 }
 //----Portfolio
 $(function() {
