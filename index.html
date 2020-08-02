@@ -17,11 +17,11 @@
 
             <div class='header_section_after'></div>
             <div class='text_header'>
-                <p>My name's Marina and I'm</p>
-                <h1> front-end developer</h1>
+                <p class='header_section_p'>My name's Marina and I'm</p>
+                <h1 class='h_one'> front-end developer</h1>
                 <a href="#" class="btn_tex_header">
                     <i class="fa fa-check" aria-hidden="true"></i>
-                    <span class="btn_text">Click me >>></span>
+                    <span id='btn' class="btn_text">Click me >>></span>
                     <span class="btn_hover"></span>
                 </a>
             </div>
@@ -37,22 +37,19 @@
                     <nav class='header_menu'>
                         <ul class="header_list">
                             <li>
-                                <a href="" class="header_link">About me</a>
+                                <a href="#home" class="header_link">About me</a>
+                            </li>
+
+
+                            <li>
+                                <a href="#portfolio" class="header_link">Portfolio</a>
                             </li>
                             <li>
-                                <a href="" class="header_link">Skills</a>
+                                <a href="#skills" class="header_link">Skills</a>
                             </li>
+
                             <li>
-                                <a href="" class="header_link">Education</a>
-                            </li>
-                            <li>
-                                <a href="" class="header_link">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="" class="header_link">Náš tým</a>
-                            </li>
-                            <li>
-                                <a href="" class="header_link">Kontakty</a>
+                                <a href="#contacts" class="header_link">KContacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -63,7 +60,7 @@
 
         <main>
 
-            <section class='content_first'>
+            <section id='home' class='content_first'>
                 <h2 class='content_first_h2'>What I'm doing</h2>
                 <div class='wrapper_content_blocks'>
                     <div class='content_first_blocks'>
@@ -87,7 +84,7 @@
                 </div>
             </section>
 
-            <div class='portfolio'>
+            <div id='portfolio' class='portfolio'>
 
                 <h2 class='content_portfolio_h2'>My portfolio</h2>
                 <div id="all">
@@ -126,29 +123,26 @@
                 </div>
             </div>
             </section>
-            <section class='content_block_three'>
-                <h2 class='content_portfolio_h2'>About me </h2>
+            <section id='skills' class='content_block_three'>
+                <h2 class='content_about_h2'>About me </h2>
                 <div class='about'>
                     <div><img class='myPhoto' src='img/oe2eh3A7uII.jpg'></div>
                     <div class='about_describing'>
-                        <p>My skills:</p>
-                        <ul>
-                            <li>Dont play computer games</li>
-                            <li>Dont play computer games</li>
-                            <li>Like reading</li>
-                            <li>Dont play computer games</li>
-                            <li>Dont play computer games</li>
-                            <li>Like reading</li>
-                            <li>Dont play computer games</li>
-                            <li>Dont play computer games</li>
-                            <li>Like reading</li>
+                        <p>About me.Part of my CV:</p>
+                        <ul class="border">
+                            <li>I don’t need work permit and I’m ready to start working immediately</li>
+                            <li>Build products making use of the best processes and practices.</li>
+                            <li>Flexible, quick learner.</li>
+                            <li>Basic knowledge in programming languages and frameworks: <br>JavaScript (JQuery, Node.js, React), Python. </li>
+                            <li>DCSS3, HTML5, Bootstrap 4, JIRA, BrowserStack, <br>SQL ( PostgreSQL) , AdobePhotoshop, Git, npm. </li>
+
                         </ul>
                     </div>
                 </div>
             </section>
 
 
-            <section class='relax'><canvas></canvas>
+            <section id='contacts' class='relax'><canvas></canvas>
                 <div class='contacts'>
                     <h3>My contacts</h3>
                     <p><span>Phone: </span>723 568 436</p>

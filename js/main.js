@@ -8,6 +8,10 @@ $(document).ready(function() {
         $('.header_burger, .header_menu. btn_top').removeClass('active');
         $('body').removeClass('lock');
     });
+    $('.btn_tex_header').click(function() {
+        $('.header_section_after').toggleClass('color');
+
+    });
 });
 //---Paralax
 function paralax() {
@@ -15,12 +19,23 @@ function paralax() {
     let b = screen.availHeight / 3
     console.log(document.documentElement.scrollTop)
     let opacityH2 = document.querySelector('.content_first_h2');
-    let leftBlocks = document.querySelector('.wrapper_content_blocks');
-    let leftBlocks2 = document.querySelector('.wrapper_content_blocks2');
+    let allUp = document.querySelector('.content_portfolio_h2');
+    let contentThirdHUp = document.querySelector('.content_about_h2');
 
 
     if (document.documentElement.scrollTop >= a) {
         opacityH2.style.opacity = '1'
+        opacityH2.style.marginBottom = '8vh'
+
+    }
+    if (document.documentElement.scrollTop >= a) {
+        allUp.style.opacity = '1'
+        allUp.style.marginBottom = '8vh'
+
+    }
+    if (document.documentElement.scrollTop >= a) {
+        contentThirdHUp.style.opacity = '1'
+        contentThirdHUp.style.marginBottom = '3vh'
 
     }
 
