@@ -14,33 +14,34 @@ $(document).ready(function() {
     });
 });
 //---Paralax
-function paralax() {
-    let a = screen.height / 6
-    let b = screen.availHeight / 3
-    console.log(document.documentElement.scrollTop)
-    let opacityH2 = document.querySelector('.content_first_h2');
-    let allUp = document.querySelector('.content_portfolio_h2');
-    let contentThirdHUp = document.querySelector('.content_about_h2');
+bdy.onscroll = function() {
+        let a = screen.height / 6
+        let b = screen.availHeight / 3
+        a = 180
 
+        let opacityH2 = document.querySelector('.content_first_h2');
+        let allUp = document.querySelector('.content_portfolio_h2');
+        let contentThirdHUp = document.querySelector('.content_about_h2');
+        console.log(allUp.getBoundingClientRect().top)
 
-    if (document.documentElement.scrollTop >= a) {
-        opacityH2.style.opacity = '1'
-        opacityH2.style.marginBottom = '8vh'
+        if (opacityH2.getBoundingClientRect().top <= a) {
+            opacityH2.style.opacity = '1'
+            opacityH2.style.marginBottom = '8vh'
+
+        }
+        if (allUp.getBoundingClientRect().top <= a) {
+            allUp.style.opacity = '1'
+            allUp.style.marginBottom = '8vh'
+
+        }
+        if (contentThirdHUp.getBoundingClientRect().top <= a) {
+            contentThirdHUp.style.opacity = '1'
+            contentThirdHUp.style.marginBottom = '3vh'
+
+        }
 
     }
-    if (document.documentElement.scrollTop >= a) {
-        allUp.style.opacity = '1'
-        allUp.style.marginBottom = '8vh'
-
-    }
-    if (document.documentElement.scrollTop >= a) {
-        contentThirdHUp.style.opacity = '1'
-        contentThirdHUp.style.marginBottom = '3vh'
-
-    }
-
-}
-//----Portfolio
+    //----Portfolio
 $(function() {
     $(".btn_tex_header ").mouseover(function(e) {
 

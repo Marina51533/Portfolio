@@ -401,12 +401,12 @@
   }
   
   div#all {
-      width: 100%;
-      height: 100%;
+      /*width: 100%;
+      height: 100%;*/
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      padding: 10vh;
+      /* padding: 10vh;*/
   }
   /* generic css */
   
@@ -421,6 +421,8 @@
       cursor: default;
       background: #fff;
       margin: 10vh;
+      width: 300px;
+      height: 200px;
   }
   
   .view .mask,
@@ -531,6 +533,23 @@
   
   .view-first:hover a.info {
       transition-delay: 0.2s;
+  }
+  
+  @media(max-width:640px) {
+      .mask,
+      .view img,
+      .view-first {
+          width: 200px;
+          height: 170px;
+      }
+      .view-first img {
+          width: 200px;
+          height: 170px;
+      }
+      .view-first .mask {
+          width: 200px;
+          height: 170px;
+      }
   }
   /*------About block3------*/
   
