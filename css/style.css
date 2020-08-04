@@ -26,8 +26,9 @@
       background-attachment: fixed;
       color: white;
       position: relative;
-      text-align: center;
       width: 100vw;
+      display: flex;
+      justify-content: center;
   }
   
   .header_section_after {
@@ -44,10 +45,10 @@
       position: absolute;
       opacity: 1;
       z-index: 100;
-      top: 30vh;
+      top: 20vh;
       /*left: 19vw;*/
       text-align: center;
-      left: 20vw;
+      /*left: 20vw;*/
   }
   
   .header_section p {
@@ -110,15 +111,9 @@
       .header_section p {
           font-size: 24px;
       }
-  }
-  
-  @media (max-width:900px) {
-      .text_header {
-          margin-left: 2vw;
-          width: 500px;
-      }
-      .text_header h1 {
-          font-size: 24px;
+      .btn_tex_header {
+          padding: 12px 50px;
+          font-size: 20px;
       }
   }
   
