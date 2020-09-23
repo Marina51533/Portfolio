@@ -16,7 +16,17 @@
       margin: 0;
   }
   /*-----header----*/
-  
+  .m_phone{
+    
+    margin-top: 3vh;
+    margin-left: 50vw;
+    z-index: 678;
+  }
+  .m_phone p{
+    font-size: 1rem !important;
+    color:orange !important;
+    z-index: 678;
+  }
   .header_section {
       height: 90vh;
       background-image: url('../img/frontend_1200x675-.jpg');
@@ -46,6 +56,7 @@
       opacity: 1;
       z-index: 100;
       top: 20vh;
+      width: 80vw;
       /*left: 19vw;*/
       text-align: center;
       /*left: 20vw;*/
@@ -59,8 +70,8 @@
   
   .header_section h1 {
       color: white;
-      font-size: 52px;
-      letter-spacing: 13px;
+      font-size: 48px;
+      letter-spacing: 6px;
       text-transform: uppercase;
   }
   
@@ -103,10 +114,10 @@
   @media (max-width:1024px) {
       .text_header {
           margin-left: 0vw;
-          width: 800px;
+          width: 80vw;
       }
       .text_header h1 {
-          font-size: 44px;
+          font-size: 40px;
       }
       .header_section p {
           font-size: 24px;
@@ -117,14 +128,18 @@
       }
   }
   
-  @media (max-width:570px) {
+  @media (max-width:650px) {
       .text_header {
           margin-left: 0vw;
-          width: 280px;
-          top: 20vh
+          width:70vw;
+          bottom:10vh;
+          top: 10vh;
       }
       .text_header h1 {
           font-size: 22px;
+      }
+      .header_section{
+        height: 100vh;
       }
   }
   
@@ -664,7 +679,7 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 50vh;
+      height: 30vh;
       background: #000;
       touch-action: none;
       display: flex;
@@ -674,7 +689,7 @@
   canvas {
       position: absolute;
       width: 100%;
-      height: 50vh;
+      height: 30vh;
       background: #000;
   }
   
@@ -689,11 +704,7 @@
       font-weight: 700;
   }
   
-  .contacts h3 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-  }
+ 
   
   .contacts p {
       font-size: 22px;
